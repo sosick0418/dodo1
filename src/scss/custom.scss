@@ -1,0 +1,116 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/variables";
+
+.nav-text-under-bar.nav-tabs {
+  border: 0;
+  .nav-link {
+    border: 0;
+    padding: 0.4rem;
+    margin: 0.8rem;
+    color: $primary-light;
+    background: transparent;
+  }
+
+  .nav-link.active {
+    color: $primary;
+    border: 0;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.nav-rounded.nav-tabs {
+  border-bottom: 0;
+
+  .nav-link {
+    border-radius: 50rem;
+    padding: map-get($spacers, 1) map-get($spacers, 2);
+    min-width: $font-size-base * 1.875;
+    margin-right: map-get($spacers, 3);
+    margin-bottom: map-get($spacers, 3);
+  }
+}
+
+.nav-transparent.nav-tabs {
+  border-bottom: 0;
+  margin-bottom: map-get($spacers, 5);
+
+  .nav-link {
+    color: $primary-light;
+    background: transparent;
+    border: $nav-tabs-border-width solid transparent;
+    border-radius: 50rem;
+    padding: map-get($spacers, 2) map-get($spacers, 4);
+
+    &:hover,
+    &:focus {
+      border-color: $nav-tabs-link-hover-border-color;
+    }
+
+    &.disabled {
+      color: $nav-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border-radius: 1rem;
+  .tooltip-arrow {
+    position: absolute;
+    display: block;
+    width: $tooltip-arrow-width;
+    height: $tooltip-arrow-height;
+    border-color: $primary-washed;
+    &::before {
+      position: absolute;
+      content: "";
+      border-bottom-color: $primary-washed;
+      border-style: solid;
+    }
+  }
+}
+
+.bs-tooltip-bottom {
+  padding: $tooltip-arrow-height 0;
+  .tooltip-arrow {
+    top: 0;
+
+    &::before &::after {
+      bottom: -1px;
+      border-width: 0 ($tooltip-arrow-width * .5) $tooltip-arrow-height;
+      border-bottom-color: $primary-washed;
+    }
+  }
+}
+// Wrapper for the tooltip content
+.tooltip-inner {
+  max-width: 100%;
+  padding: $tooltip-padding-y $tooltip-padding-x;
+  color: $tooltip-color;
+  text-align: start;
+  background-color: $primary-washed;
+}
+
+
+ul {
+  padding: 0 2rem;
+  margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.accordion-button {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.accordion-item {
+  border : 0 !important;
+}
+

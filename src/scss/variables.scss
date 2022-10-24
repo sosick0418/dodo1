@@ -1,0 +1,147 @@
+$primary-washed: #e1ebff;
+$primary-light: #a5b9de;
+$primary-tint: #5b76ac;
+$primary: #405c94;
+$primary-shade: #324d83;
+
+$purple-washed: #ece1ff;
+$purple-light: #b8a5de;
+$purple-tint: #7b5bac;
+$purple: #5c4094;
+$purple-shade: #4d3283;
+
+$gray-washed: #ffffff;
+$gray-light: #dedede;
+$gray-tint: #8c8c8c;
+$gray: #696969;
+$gray-shade: #3f3f3f;
+
+$light: #f8f9fa;
+$light-shade: #dfdce7;
+$shine: #0dcaf0;
+$dull: #abb5c7;
+$dull-tint: #eceaf7;
+$light-grey: #ededed;
+
+$theme-colors: (
+  "primary-washed": $primary-washed,
+  "primary-light":  $primary-light,
+  "primary-tint":   $primary-tint,
+  "primary":        $primary,
+  "primary-shade":  $primary-shade,
+
+  "purple-washed": $purple-washed,
+  "purple-light":  $purple-light,
+  "purple-tint":   $purple-tint,
+  "purple":        $purple,
+  "purple-shade":  $purple-shade,
+
+  "gray-washed": $gray-washed,
+  "gray-light":  $gray-light,
+  "gray-tint":   $gray-tint,
+  "gray":        $gray,
+  "gray-shade":  $gray-shade,
+
+  "shine":          $shine,
+  "dull":           $dull,
+  "dull-tint":      $dull-tint,
+  "secondary":      #6c757d,
+  "success":        #198754,
+  "info":           #0dcaf0,
+  "warning":        #ffc107,
+  "danger":         #dc3545,
+  "white":          #ffffff,
+  "light":          $light,
+  "light-shade":    $light-shade,
+  "dark":           #212529,
+
+  "light-grey":       #ededed,
+);
+
+$theme-colors-inverted: (
+  "primary":        #ffffff,
+  "primary-light":  $light,
+  "primary-tint":   $light-shade,
+  "primary-washed": $primary,
+
+  "purple":        #ffffff,
+  "purple-light":  $light,
+  "purple-tint":   $light-shade,
+  "purple-washed": $purple,
+
+  "gray":        #ffffff,
+  "gray-light":  $light,
+  "gray-tint":   $light-shade,
+  "gray-washed": $gray,
+
+  "secondary":   $light-shade,
+
+  "white":         $primary,
+  "light":         $primary-tint,
+  "light-shade":   $primary-light,
+
+  "dull":          $dull-tint,
+  "dull-tint":     $dull,
+  "light-grey":    black,
+);
+
+$spacing-ratio: 0.6;
+$spacer: 0.6rem * $spacing-ratio;
+
+$carousel-indicator-transition: 0.35s;
+$carousel-transition-duration: 0.35s;
+
+$headings-font-family: "ITC Avant Garde Gothic Std";
+$input-btn-font-family: "ITC Avant Garde Gothic Std";
+$font-family-base: "Spoqa Han Sans Neo";
+$input-font-family: "Spoqa Han Sans Neo";
+
+.form-label {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif !important;
+}
+
+$font-weight-light: 250;
+$font-weight-normal: 350;
+$font-weight-bold: 700;
+
+$line-height-base: 1.7;
+$line-height-sm: $line-height-base * 0.833;
+$line-height-lg: $line-height-base * 1.333;
+
+$modal-inner-padding: $spacer * 3;
+
+$form-label-margin-bottom: 0;
+
+//$border-radius: 0.5rem;
+//$border-radius-sm: 0.4rem;
+//$border-radius-lg: 0.6rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 12
+);
+$font-size-base: 0.8rem;
+
+$input-btn-padding-y:     .375rem * $spacing-ratio;
+$input-btn-padding-x:     .75rem * $spacing-ratio;
+
+$input-btn-padding-y-sm:  .25rem * $spacing-ratio;
+$input-btn-padding-x-sm:  .5rem * $spacing-ratio;
+
+$input-btn-padding-y-lg:  .5rem * $spacing-ratio;
+$input-btn-padding-x-lg:  1rem * $spacing-ratio;
+
+$nav-link-padding-y:      .5rem * $spacing-ratio;
+$nav-link-padding-x:      1rem * $spacing-ratio;
+
+$accordion-padding-y:     1rem * $spacing-ratio;
+$accordion-padding-x:     1.25rem * $spacing-ratio;
+
+$card-cap-padding-x:  0;
+$card-cap-padding-y:  0;

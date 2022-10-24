@@ -1,0 +1,47 @@
+
+//div {
+//  scrollbar-width: none;
+//  scrollbar-color: transparent transparent;
+//}
+//
+//div::-webkit-scrollbar {
+//  width: 0;
+//  display: none;
+//}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: gray;
+}
+
+@each $name, $color in $theme-colors {
+  .scrollbar-bg-#{$name}::-webkit-scrollbar-thumb {
+    border: 3px solid $color;
+  }
+
+  .scrollbar-#{$name}::-webkit-scrollbar-thumb {
+    background-color: $color;
+  }
+}
+
+@each $name, $color in $theme-colors {
+  @each $nameBg, $colorBg in $theme-colors {
+    .scrollbar-#{$name}.scrollbar-bg-#{$nameBg} {
+      scrollbar-color: $color $colorBg;
+    }
+  }
+}
